@@ -89,3 +89,7 @@ a:hover:after {
 #arrowDown-one:hover {
   cursor: pointer;
 }
+
+.contact-container {
+  text-align: center;
+}
