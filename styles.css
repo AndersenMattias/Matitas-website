@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+#soon {
+  text-align: center;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: rgb(247, 241, 241);
