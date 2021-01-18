@@ -49,3 +49,39 @@ a:hover:after {
   width: 50%;
   left: 23%;
 }
+
+.title-container {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.title-text {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  font-size: 100px;
+}
+
+.title-text h1 {
+  color: #000000;
+}
+
+.title-text #dot {
+  color: #fd746c;
+}
+
+.title-text p {
+  color: rgb(172, 59, 159);
+}
+
+.title-text h2 {
+  color: #fd746c;
+}
+
+#arrowDown-one {
+  font-size: 150px;
+}
+
+#arrowDown-one:hover {
+  cursor: pointer;
+}
