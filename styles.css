@@ -56,10 +56,9 @@ a:hover:after {
 }
 
 .title-text {
-  position: absolute;
-  top: 20%;
-  left: 20%;
   font-size: 100px;
+  text-align: center;
+  padding-top: 100px;
 }
 
 .title-text h1 {
@@ -79,7 +78,7 @@ a:hover:after {
 }
 
 #arrowDown-one {
-  font-size: 150px;
+  font-size: 100px;
 }
 
 #arrowDown-one:hover {
