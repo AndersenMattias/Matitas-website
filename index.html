@@ -30,6 +30,25 @@
       </div>
     </div>
 
+    <form name="contact" method="POST" data-netlify="true">
+      <p>
+        <label>First Name: <input type="text" name="firstName" /></label>
+      </p>
+      <p>
+        <label>Last Name: <input type="text" name="lastName" /></label>
+      </p>
+      <p>
+        <label>Email: <input type="text" name="email" /></label>
+      </p>
+      <p>
+        <label>Message: <textarea name="message"></textarea></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+
+    <!--
     <div class="contact-container">
       <form action="POST" data-netlify="true">
         <label>First Name <input type="text" name="firstName" /></label
@@ -47,13 +66,14 @@
           id="myFile"
           placeholder="Upload File"
         />
+                 spam check
         <div class="spam-box">
           <div data-netlify-recaptcha="true"></div>
-        </div>
+        </div> 
 
         <button type="submit">Send</button>
       </form>
-    </div>
+    </div> -->
 
     <script src="script.js"></script>
   </body>
