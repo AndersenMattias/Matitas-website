@@ -26,6 +26,7 @@ const overlay = document.querySelector('.overlay');
 // Btn open / close Modal window
 const btnCloseModal = document.getElementById('btn-closeModal');
 const btnsOpenModal = document.getElementById('btn-showModal');
+const hamburgerShowModal = document.getElementById('btn-hamburger-showModal');
 
 // Btn arrow element
 const arrowOneDown = document.querySelector('.arrowDown-one');
@@ -49,6 +50,7 @@ const closeModal = function () {
 
 // Open Modal
 btnsOpenModal.addEventListener('click', openModal);
+hamburgerShowModal.addEventListener('click', openModal);
 
 // Close Modal
 btnCloseModal.addEventListener('click', closeModal);
