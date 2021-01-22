@@ -242,10 +242,8 @@ body {
 
 /* PROJECTS */
 .projects-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  margin: 0 12rem;
+  display: grid;  
+  grid-template-columns: 1fr 1fr; 
   min-height: 100%;
 }
 
@@ -268,9 +266,7 @@ body {
 /* FOOTER */
 .footer {
   background-color: #393333;
-
-  margin-top: auto;
-  height: 50px;  
+  margin-top: auto; 
 }
 
 .footer p {
@@ -403,15 +399,10 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
- 
-    margin-left: 0 auto;
+    min-height: 100%;
   }
 
-  .project-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+
 
   .projects-container img {
     width: 250px;
