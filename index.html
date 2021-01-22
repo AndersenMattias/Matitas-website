@@ -3,77 +3,129 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mattias</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
+    <title>Mattias Simonsson</title>
   </head>
   <body>
-    <div class="header-container">
-      <div class="nav-links">
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact me</a></li>
-          </ul>
-        </nav>
+    <!-- HEADER, NAVIGATION AND TITLE -->
+
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a class="nav-link" href="#section-one">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-two">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-three">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link--btn btn--show-modal" href="#"
+              >Lets talk!</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-title">
+        <div class="title-text">
+          <h1>Hello<span id="dot">.</span></h1>
+          <p>I am</p>
+          <p>Mattias</p>
+        </div>
+        <h2 class="title-frontend">Frontend Developer</h2>
+      </div>      
+      <button class="arrowDown-one">&DownArrow;</button>  
+    </header>
+
+    <!-- ABOUT ME SECTION -->
+
+    <div class="about-me">
+      <div class="about-me-div">
+        <h2 class="about-me-title">About</h2>
+        <p class="about-me-description">
+          I am currently enjoying a two year Frontend developement programme in
+          Helsingborg.
+        </p>
+      </div>
+  
+      <button class="arrowDown-two">&DownArrow;</button>
+ 
+    </div>
+
+    <!-- PROJECT SECTION -->
+    <div class="projects-container">
+      <img src="/img/filmsite-pic.png" alt="a summary of searched movie" class="projects-img"/>
+      <div class="project-div">
+        <h5 class="project-title">Filmsite</h5>
+        <p>
+          This page was created from a school project. The page retrieves and formats data from a movie API.</p>
+          <a href="https://github.com/MattiasSimonsson/Filmsite" target="_blank">Github</a>
+      </div>
+
+      <div class="project-div">
+        <h5 class="project-title">Mortgage calculator</h5>
+        <p>
+          Work in progress..
+        </p>
+      </div>
+      <img src="/img/Lånkalk-pic.png" alt="Mortgage calculator" class="projects-img" />
+
+      <img src="/img/first-project.png" alt="my first project" class="projects-img" />
+      <div class="project-div">
+        <h5 class="project-title">First project</h5>
+        <p>This was my first project, only HTML5 and CSS3. </p>
       </div>
     </div>
-    <p id="soon">Coming soon..</p>
-    <div class="title-container">
-      <div class="title-text">
-        <h1>Hello<span id="dot">.</span></h1>
-        <p>I am</p>
-        <p>Mattias</p>
-        <h2>Frontend Developer</h2>
-        <span id="arrowDown-one">&#8595;</span>
-      </div>
-    </div>
 
-    <form name="contact" method="POST" data-netlify="true">
-      <p>
-        <label>First Name: <input type="text" name="firstName" /></label>
-      </p>
-      <p>
-        <label>Last Name: <input type="text" name="lastName" /></label>
-      </p>
-      <p>
-        <label>Email: <input type="text" name="email" /></label>
-      </p>
-      <p>
-        <label>Message: <textarea name="message"></textarea></label>
-      </p>
-      <p>
-        <button type="submit">Send</button>
-      </p>
-    </form>
+    <!-- FOOTER STARTS HERE -->
+    <footer class="footer">
+      <p>&copy; Copyright by Mattias Simonsson</p>
+    </footer> 
 
-    <!--
-    <div class="contact-container">
-      <form action="POST" data-netlify="true">
-        <label>First Name <input type="text" name="firstName" /></label
-        ><br /><br />
-        <label>Last Name <input type="text" name="lastName" /></label
-        ><br /><br />
+    <!-- MODAL WINDOW -->
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
 
-        <label>Your Email: <input type="email" name="email" /></label
-        ><br /><br />
+      <form class="modal-form" name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>First Name: <input type="text" name="firstName" /></label>
+        </p>
+        <p>
+          <label
+            >Last Name: <br />
+            <input type="text" name="lastName"
+          /></label>
+        </p>
+        <p>
+          <label>Email: <input type="text" name="email" /></label>
+        </p>
+        <p>
+          <label
+            >Message: <br />
+            <textarea name="message"></textarea>
+          </label>
+        </p>
 
-        <label>Message: <textarea name="message"></textarea></label><br /><br />
         <input
           type="file"
           name="myfile"
-          id="myFile"
+          id="myfile"
           placeholder="Upload File"
         />
-                 spam check
-        <div class="spam-box">
-          <div data-netlify-recaptcha="true"></div>
-        </div> 
-
-        <button type="submit">Send</button>
+        <p>
+          <button type="submit" id="btn-send">Send</button>
+        </p>
       </form>
-    </div> -->
+    </div>
+    <div class="overlay hidden"></div>
 
     <script src="script.js"></script>
   </body>
