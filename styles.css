@@ -420,8 +420,7 @@ textarea {
   }
 
   .projects-container img {
-    width: 250px;
-    float: left;    
+    width: 250px; 
   }
 
   /* MODAL WINDOW */
@@ -455,7 +454,8 @@ textarea {
 
 }
 
-@media screen and (max-width : 700px) {
+
+@media screen and (max-width : 768px) {
   
   .hamburger-container {
     display: block;
@@ -510,115 +510,21 @@ textarea {
   }
 
   .projects-container img {
-    width: 250px;
-    float: left;    
+    width: 250px; 
   }
 
   /* MODAL WINDOW */
 
   .modal {
-    height: 600px;
-    width: 300px;
+    height: 300px;
+    width: 600px;
   }
 
   .modal-form {
     display: grid;
-    grid-template-columns: 1fr;
+
     justify-content: center;
-    gap: 0;
-  }
-
-  .modal-form p {    
-    text-align: center;
-  }
-
-  .modal-form input {
-    text-align: center;    
-    height: 50px;
-    width: 280px;
-  }
-
-  .modal-form textarea {
-    height: 50px;
-    width: 280px;
-  }
-
-}
-
-@media screen and (max-width : 768px) {
-  
-  .hamburger-container {
-    display: block;
-  }
-
-  .nav {
-    display: none;
-  } 
-  /* Första sektionen "HEADER" */
-  .header {
-    display: flex;
-    justify-content: center;
-    min-height: 100%;   
-    
-  }
-
-  .header-title {   
-    font-size: 10px;
-    text-align: center;
-  
-  }
-   .title-text {
-    text-align: center;
-    font-size: 20px;
-  }
-
-  .title-frontend {
-    font-size: 30px;
-    text-align: center;
-  }
-
-  /* About me section */
-  .about-me-title {
-    font-size: 2rem;
-  }
-
-  .about-me {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100%;
-  }
-
-  .about-me-description {
-    font-size: 15px;
-    text-transform: none;
-  }
-
-  /* Project Section */
-  .projects-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    min-height: 100%;
-  }
-
-  .projects-container img {
-    width: 250px;
-    float: left;    
-  }
-
-  /* MODAL WINDOW */
-
-  .modal {
-    height: 600px;
-    width: 300px;
-  }
-
-  .modal-form {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    gap: 0;
+ 
   }
 
   .modal-form p {    
