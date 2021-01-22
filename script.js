@@ -1,3 +1,25 @@
+// HAMBURGER MENU
+let navbar = document.querySelector(".hamburger-nav")
+let hamburgerContainer = document.querySelector(".hamburger-container")
+
+// toggles hamburger menu in and out when clicking on the hamburger
+function toggleHamburger(){
+  navbar.classList.toggle("showNav")
+  hamburgerContainer.classList.toggle("showClose")
+}
+
+hamburgerContainer.addEventListener("click", toggleHamburger)
+function checkToggle(e){
+  let itemClicked = e.target
+  if (itemClicked.classList.contains("hamburger-link")) {
+    toggleHamburger()
+  }
+}
+
+navbar.addEventListener("click", checkToggle)
+
+// END OF HAMBURGER MENU
+
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 

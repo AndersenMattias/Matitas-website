@@ -4,6 +4,72 @@
   box-sizing: border-box;
 }
 
+/* HAMBURGER MENU */
+.hamburger-container {
+  display: none;
+  position: sticky;
+  z-index: 1000;
+  top: 20px;
+  left: 20px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("/img/hamburger-icon.png");
+  background-size: 100%;
+}
+
+/* change ham image to close */
+.showClose {
+  background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+}
+
+.hamburger-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  /* hide the menu above the screen by default */
+  transform: translateY(-100%);
+  /* transition adds a little animation when sliding in and out the menu */
+  transition: transform 0.2s ease;
+}
+.showNav {
+  /* show the menu */
+  transform: translateY(0);
+}
+
+/* basic nav styling below */
+.hamburger-nav ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hamburger-nav ul li a {
+  color: white;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+}
+
+.hamburger-nav ul li a:hover, .hamburger-nav ul li a:focus {
+  border-bottom: 2px solid white;
+}
+
+/* END OF HAMBURGER MENU */
+
 html {
   height: 100%;
 }
@@ -14,7 +80,6 @@ body {
   color: #444;
   line-height: 1.9;
   background-color: #fffdfd9a;
-
 }
 
 /* NAVIGATION */
@@ -295,5 +360,46 @@ textarea {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 1440px) {
-} ;
+
+@media screen and (max-width : 320px) {
+  .hamburger-container {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  } 
+  /* Första sektionen "HEADER" */
+  .header {
+    display: flex;
+    justify-content: center;
+    min-height: 100%;    
+  }
+
+  .header-title {
+   
+    font-size: 10px;
+   
+
+    text-align: center;
+  }
+   .title-text {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .title-frontend {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  /* Andra sektionen "ABOUT" */
+  .about-me {
+    height: 20px;
+  }
+
+  .projects-container{
+    height: 10px;
+  }
+
+}
