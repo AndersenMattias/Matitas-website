@@ -22,7 +22,7 @@
         <li><a class="hamburger-link" href="#">Home</a></li>
         <li><a class="hamburger-link" href="#">Profile</a></li>
         <li><a class="hamburger-link" href="#">About</a></li>
-        <li><a class="hamburger-link btn btn-show-modal" href="#">Contacts</a></li>
+        <li><a class="hamburger-link btn-show-modal" id="btn-showModal"  href="#">Contact</a></li>
       </ul>
     </nav>
 
@@ -33,16 +33,16 @@
       <nav class="nav">
         <ul class="nav-links">
           <li class="nav-item">
-            <a class="nav-link" href="#section-one">Home</a>
+            <a class="nav-link" href="#sectionOne">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#section-two">About</a>
+            <a class="nav-link" href="#sectionTwo">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#section-three">Portfolio</a>
+            <a class="nav-link" href="#sectionThree">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="btn-showModal" href="#">Lets talk!</a>
+            <a class="nav-link" id="btn-showModal" href="#">Contact</a>
           </li>
         </ul>
       </nav>
@@ -60,7 +60,7 @@
 
 
     <!-- ABOUT ME SECTION -->
-    <div class="about-me">
+    <div class="about-me" id="sectionTwo">
       <div class="about-me-div">
         <h2 class="about-me-title">About</h2>
         <p class="about-me-description">
@@ -74,7 +74,7 @@
 
 
     <!-- PROJECT SECTION -->
-    <div class="projects-container">
+    <div class="projects-container" id="sectionThree">
 
       <div class="project-div">
       <img src="/img/filmsite-pic.png" alt="a summary of searched movie" class="projects-img"/>     
@@ -107,7 +107,7 @@
   </div>
 
     <!-- MODAL WINDOW -->
-    <div class="modal hidden">
+    <div class="modal hidden" >
       <button id="btn-closeModal">&times;</button>
 
       <form class="modal-form" name="contact" method="POST" data-netlify="true">
