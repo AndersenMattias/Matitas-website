@@ -24,8 +24,8 @@ const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 
 // Btn open / close Modal window
-const btnCloseModal = document.querySelector('.btn--close-modal');
-const btnsOpenModal = document.querySelectorAll('.btn--show-modal');
+const btnCloseModal = document.getElementById('btn-closeModal');
+const btnsOpenModal = document.getElementById('btn-showModal');
 
 // Btn arrow element
 const arrowOneDown = document.querySelector('.arrowDown-one');
@@ -48,7 +48,7 @@ const closeModal = function () {
 };
 
 // Open Modal
-btnsOpenModal.forEach((btn) => btn.addEventListener('click', openModal));
+btnsOpenModal.addEventListener('click', openModal);
 
 // Close Modal
 btnCloseModal.addEventListener('click', closeModal);

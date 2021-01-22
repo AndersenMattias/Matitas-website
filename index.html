@@ -22,7 +22,7 @@
         <li><a class="hamburger-link" href="#">Home</a></li>
         <li><a class="hamburger-link" href="#">Profile</a></li>
         <li><a class="hamburger-link" href="#">About</a></li>
-        <li><a class="hamburger-link nav-link--btn btn--show-modal" href="#">Contacts</a></li>
+        <li><a class="hamburger-link btn btn-show-modal" href="#">Contacts</a></li>
       </ul>
     </nav>
 
@@ -42,9 +42,7 @@
             <a class="nav-link" href="#section-three">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link--btn btn--show-modal" href="#"
-              >Lets talk!</a
-            >
+            <a class="nav-link" id="btn-showModal" href="#">Lets talk!</a>
           </li>
         </ul>
       </nav>
@@ -110,7 +108,7 @@
 
     <!-- MODAL WINDOW -->
     <div class="modal hidden">
-      <button class="btn--close-modal">&times;</button>
+      <button id="btn-closeModal">&times;</button>
 
       <form class="modal-form" name="contact" method="POST" data-netlify="true">
         <p>

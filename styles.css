@@ -338,7 +338,7 @@ textarea {
   width: 100px;
 }
 
-.btn--close-modal {
+#btn-closeModal {
   position: absolute;
   top: 0.5rem;
   right: 2rem;
