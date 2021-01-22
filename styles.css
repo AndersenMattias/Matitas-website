@@ -376,11 +376,20 @@ textarea {
   }
 
   /* Andra sektionen "ABOUT" */
+  .about-me-title {
+    font-size: 2rem;
+  }
+
   .about-me {
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 100%;
+  }
+
+  .about-me-description {
+    font-size: 15px;
+    text-transform: none;
   }
 
   .projects-container{
@@ -398,7 +407,30 @@ textarea {
   /* MODAL WINDOW */
 
   .modal {
-    display: none;
+    height: 600px;
+    width: 300px;
+  }
+
+  .modal-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .modal-form p {    
+    text-align: center;
+  }
+
+  .modal-form input {
+    text-align: center;    
+    height: 50px;
+    width: 280px;
+  }
+
+  .modal-form textarea {
+    height: 50px;
+    width: 280px;
   }
 
 }
