@@ -95,7 +95,7 @@ body {
 
 
 /* nav and stickly class at the same time */
-.nav {
+.nav-links {
   display: flex;
   justify-content: center;
   width: 100%;
