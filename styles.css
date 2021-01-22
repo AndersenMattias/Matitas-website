@@ -80,7 +80,7 @@ body {
   font-weight: 300;
   color: #444;
   line-height: 1.9;
-  background-color: #fffdfd9a;
+  background-color: #f5f1f19a;
   height: 100vh;
 }
 
@@ -88,33 +88,41 @@ body {
 .nav {
   display: flex;
   justify-content: center;
-  height: 9rem;
+  list-style: none;
+  height: 6rem;
   width: 100%;
-  padding: 0 6rem;
-  z-index: 100;
 }
+
 
 /* nav and stickly class at the same time */
-.nav.sticky {
-  position: fixed;
-  background-color: rgba(255, 255, 255, 0.95);
+.nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  background-color: #fefbfb9a;
 }
 
-.nav-links {
+
+.sticky {
   display: flex;
-  align-items: center;
-  list-style: none;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  background-color: #fefbfb9a;
 }
+
 
 .nav-item {
   margin-left: 4rem;
+  list-style: none;
 }
 
 .nav-link {
   text-transform: uppercase;
   text-decoration: none;
   color: black;
-  display: inline-block;
   position: relative;
 }
 
@@ -124,6 +132,7 @@ body {
   content: '';
   display: block;
   height: 2px;
+  width: 50px;
   left: 50%;
   position: absolute;
   background: rgb(172, 59, 159);
@@ -138,7 +147,7 @@ body {
 /* HEADER */
 .header {
   padding: 0 3rem;
-  height: 100vh;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -164,8 +173,10 @@ body {
 .title-frontend {
   color: #fd746c;
   font-size: 8rem;
+  text-align: center;
 }
 
+/* Arrows for navigation */
 .arrowDown-one, .arrowDown-two {
   font-size: 100px;
   border: none;
@@ -186,12 +197,17 @@ body {
   margin: 0 auto;
 }
 
+.arrowUp-div {
+  text-align: center;
+}
+
+
 /* ABOUT ME SECTION */
 
 .about-me {
   height: 100vh;
   padding: 15rem 3rem;
-  border-top: 1px solid #ddd;
+  
   transition: transform 1s, opacity 1s;
   text-align: center;
 }
@@ -237,7 +253,6 @@ body {
 .projects-container {
   display: grid;  
   grid-template-columns: 1fr 1fr; 
-  min-height: 100%;
 }
 
 .projects-img {
@@ -491,6 +506,99 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: 100%;
+  }
+
+  .projects-container img {
+    width: 250px;
+    float: left;    
+  }
+
+  /* MODAL WINDOW */
+
+  .modal {
+    height: 600px;
+    width: 300px;
+  }
+
+  .modal-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .modal-form p {    
+    text-align: center;
+  }
+
+  .modal-form input {
+    text-align: center;    
+    height: 50px;
+    width: 280px;
+  }
+
+  .modal-form textarea {
+    height: 50px;
+    width: 280px;
+  }
+
+}
+
+@media screen and (max-width : 768px) {
+  
+  .hamburger-container {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  } 
+  /* Första sektionen "HEADER" */
+  .header {
+    display: flex;
+    justify-content: center;
+    min-height: 100%;   
+    
+  }
+
+  .header-title {   
+    font-size: 10px;
+    text-align: center;
+  
+  }
+   .title-text {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .title-frontend {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  /* About me section */
+  .about-me-title {
+    font-size: 2rem;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+  }
+
+  .about-me-description {
+    font-size: 15px;
+    text-transform: none;
+  }
+
+  /* Project Section */
+  .projects-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     min-height: 100%;
   }
 

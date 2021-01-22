@@ -1,22 +1,22 @@
 // HAMBURGER MENU
-let navbar = document.querySelector(".hamburger-nav")
-let hamburgerContainer = document.querySelector(".hamburger-container")
+let hamburgerNav = document.querySelector('.hamburger-nav')
+let hamburgerContainer = document.querySelector('.hamburger-container')
 
 // toggles hamburger menu in and out when clicking on the hamburger
 function toggleHamburger(){
-  navbar.classList.toggle("showNav")
-  hamburgerContainer.classList.toggle("showClose")
+  hamburgerNav.classList.toggle('showNav')
+  hamburgerContainer.classList.toggle('showClose')
 }
 
-hamburgerContainer.addEventListener("click", toggleHamburger)
+hamburgerContainer.addEventListener('click', toggleHamburger)
 function checkToggle(e){
   let itemClicked = e.target
-  if (itemClicked.classList.contains("hamburger-link")) {
+  if (itemClicked.classList.contains('hamburger-link')) {
     toggleHamburger()
   }
 }
 
-navbar.addEventListener("click", checkToggle)
+hamburgerNav.addEventListener('click', checkToggle)
 
 // END OF HAMBURGER MENU
 
@@ -63,6 +63,7 @@ document.addEventListener('keydown', function (e) {
   }
 });
 
+/*
 // Scrool down smooth onclick
 arrowOneDown.addEventListener('click', function (e) {
   const sectionOneCords = sectionOne.getBoundingClientRect();
@@ -75,4 +76,18 @@ arrowDownTwo.addEventListener('click', function (e) {
   const sectionTwoCords = sectionOne.getBoundingClientRect();
 
   sectionTwo.scrollIntoView({ behavior: 'smooth' });
-});
+}); */
+
+
+window.onscroll = function() {myFunction()};
+
+let navbar = document.querySelector('.nav-links');
+let sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add('sticky')
+  } else {
+    navbar.classList.remove('sticky');
+  }
+}
