@@ -436,7 +436,6 @@ textarea {
 }
 
 @media screen and (max-width : 700px) {
-
   
   .hamburger-container {
     display: block;
@@ -467,11 +466,20 @@ textarea {
   }
 
   /* Andra sektionen "ABOUT" */
+  .about-me-title {
+    font-size: 2rem;
+  }
+
   .about-me {
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 100%;
+  }
+
+  .about-me-description {
+    font-size: 15px;
+    text-transform: none;
   }
 
   .projects-container{
@@ -483,9 +491,10 @@ textarea {
 
   .projects-container img {
     width: 250px;
-    float: left;
-    
+    float: left;    
   }
+
+  /* MODAL WINDOW */
 
   .modal {
     height: 600px;
@@ -515,4 +524,3 @@ textarea {
   }
 
 }
-
