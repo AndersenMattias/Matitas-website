@@ -457,7 +457,7 @@ textarea {
 
 }
 
-
+/* 
 @media screen and (max-width : 768px) {
   
   #sectionThree {
@@ -471,7 +471,7 @@ textarea {
   .nav {
     display: none;
   } 
-  /* Första sektionen "HEADER" */
+  /* Första sektionen "HEADER" 
 
 
   .header-title {   
@@ -488,7 +488,7 @@ textarea {
     text-align: center;
   }
 
-  /* Andra sektionen "ABOUT" */
+  /* Andra sektionen "ABOUT" 
   .about-me-title {
     font-size: 2rem;
   }
@@ -521,7 +521,7 @@ textarea {
     width: 250px; 
   }
 
-  /* MODAL WINDOW */
+  /* MODAL WINDOW 
 
   .modal {
     height: 300px;
@@ -549,4 +549,4 @@ textarea {
     height: 50px;
     width: 280px;
   } 
-}
+} */
