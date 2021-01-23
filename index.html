@@ -13,23 +13,23 @@
   </head>
   <body>
 
-    <div class="container">
+   
 
     <!-- Hamburger menu -->
     <button class="hamburger-container"></button>
     <nav class="hamburger-nav">
       <ul>
-        <li><a class="hamburger-link" href="#">Home</a></li>
-        <li><a class="hamburger-link" href="#">Profile</a></li>
-        <li><a class="hamburger-link" href="#">About</a></li>
+        <li><a class="hamburger-link" href="#sectionOne">Home</a></li>
+        <li><a class="hamburger-link" href="#sectionTwo">About</a></li>
+        <li><a class="hamburger-link" href="#sectionThree">Portfolio</a></li>
         <li><a class="hamburger-link btn-show-modal" id="btn-hamburger-showModal"  href="#">Contact</a></li>
       </ul>
     </nav>
 
     <!-- End of hamburger menu -->
-    <div class="container">
-    
-    <header class="header" id="sectionOne">
+  <div class="container">
+    <section id="sectionOne">
+    <header class="header">
       <nav class="nav">
         <ul class="nav-links">
           <li class="nav-item">
@@ -49,20 +49,21 @@
     </header>
 
       
-      <div class="header-title">
-        <div class="title-text">
+      <div class="intro-div">
           <h1>Hello<span id="dot">.</span></h1>
           <p>I am</p>
           <p>Mattias</p>
-        </div>
-        <h2 class="title-frontend">Frontend Developer</h2>
+          <h2 id="title-frontend">Frontend Developer</h2>
       </div>      
+    </section>
   
    
 
 
     <!-- ABOUT ME SECTION -->
-    <div class="about-me" id="sectionTwo">
+    <section id="sectionTwo">
+
+    <div class="about-me">
       <div class="about-me-div">
         <h2 class="about-me-title">About</h2>
         <div class="about-me-description">
@@ -74,12 +75,13 @@
             <a href="CV.pdf" target="_blank" id="myResume">My resume (pdf 681kb)</a>
         </div>
       </div>
-  
     </div>
+    </section>
 
 
     <!-- PROJECT SECTION -->
-    <div class="projects-container" id="sectionThree">
+    <section id="sectionThree">
+    <div class="projects-container">
 
       <div class="project-div">
       <img src="/img/filmsite-pic.png" alt="a summary of searched movie" class="projects-img"/>     
@@ -102,7 +104,8 @@
         <h5 class="project-title">First project</h5>
         <p>This was my first project, only HTML5 and CSS3. </p>      
     </div>
-  </div>
+    </div>
+    </section>
 
     <!-- FOOTER STARTS HERE -->
     <footer class="footer">
@@ -110,7 +113,7 @@
     </footer> 
   </div>
 
-  </div>
+
 
     <!-- MODAL WINDOW -->
     <div class="modal hidden" >
