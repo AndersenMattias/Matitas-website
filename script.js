@@ -1,24 +1,3 @@
-// HAMBURGER MENU
-let hamburgerNav = document.querySelector('.hamburger-nav')
-let hamburgerContainer = document.querySelector('.hamburger-container')
-
-// toggles hamburger menu in and out when clicking on the hamburger
-function toggleHamburger(){
-  hamburgerNav.classList.toggle('showNav')
-  hamburgerContainer.classList.toggle('showClose')
-}
-
-hamburgerContainer.addEventListener('click', toggleHamburger)
-function checkToggle(e){
-  let itemClicked = e.target
-  if (itemClicked.classList.contains('hamburger-link')) {
-    toggleHamburger()
-  }
-}
-
-hamburgerNav.addEventListener('click', checkToggle)
-
-// END OF HAMBURGER MENU
 
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
@@ -26,7 +5,6 @@ const overlay = document.querySelector('.overlay');
 // Btn open / close Modal window
 const btnCloseModal = document.getElementById('btn-closeModal');
 const btnsOpenModal = document.getElementById('btn-showModal');
-const hamburgerShowModal = document.getElementById('btn-hamburger-showModal');
 
 // Btn arrow element
 const arrowOneDown = document.querySelector('.arrowDown-one');
@@ -50,7 +28,7 @@ const closeModal = function () {
 
 // Open Modal
 btnsOpenModal.addEventListener('click', openModal);
-hamburgerShowModal.addEventListener('click', openModal);
+// hamburgerShowModal.addEventListener('click', openModal);
 
 // Close Modal
 btnCloseModal.addEventListener('click', closeModal);
@@ -78,7 +56,7 @@ arrowDownTwo.addEventListener('click', function (e) {
   sectionTwo.scrollIntoView({ behavior: 'smooth' });
 }); */
 
-
+/*
 window.onscroll = function() {myFunction()};
 
 let navbar = document.querySelector('.nav-links');
@@ -90,4 +68,4 @@ function myFunction() {
   } else {
     navbar.classList.remove('sticky');
   }
-}
+} */
