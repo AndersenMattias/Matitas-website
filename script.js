@@ -1,4 +1,3 @@
-
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 
@@ -40,32 +39,3 @@ document.addEventListener('keydown', function (e) {
     closeModal();
   }
 });
-
-/*
-// Scrool down smooth onclick
-arrowOneDown.addEventListener('click', function (e) {
-  const sectionOneCords = sectionOne.getBoundingClientRect();
-
-  sectionOne.scrollIntoView({ behavior: 'smooth' });
-});
-
-// Scrool down smooth onclick
-arrowDownTwo.addEventListener('click', function (e) {
-  const sectionTwoCords = sectionOne.getBoundingClientRect();
-
-  sectionTwo.scrollIntoView({ behavior: 'smooth' });
-}); */
-
-/*
-window.onscroll = function() {myFunction()};
-
-let navbar = document.querySelector('.nav-links');
-let sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add('sticky')
-  } else {
-    navbar.classList.remove('sticky');
-  }
-} */

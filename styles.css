@@ -29,7 +29,7 @@ section {
   width: 100vw;
   height: 3rem;
   position: fixed;
- background-color: #fefbfb9a;
+  background-color: #fefbfb9a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,38 +106,6 @@ section {
   margin-top: 1rem;
 }
 
-
-
-
-/* NAVIGATION 
-
-.nav-link {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: black;
-  position: relative;
-}
-
-.nav-link:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: '';
-  display: block;
-  height: 2px;
-  width: 50px;
-  left: 50%;
-  position: absolute;
-  background: rgb(172, 59, 159);
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-.nav-link:hover:after {
-  width: 50%;
-  left: 23%;
-}
-
- */
-
 .intro-div {
   text-align: center;
   color: black;
@@ -145,7 +113,7 @@ section {
 }
 
 #dot {
-  color: #1284c2; 
+  color: #1284c2;
 }
 
 #title-frontend {
@@ -154,13 +122,12 @@ section {
   text-align: center;
 }
 
-
 /* ABOUT ME SECTION */
 
 .about-me {
   height: 100vh;
   padding: 15rem 3rem;
-  
+
   transition: transform 1s, opacity 1s;
   text-align: center;
 }
@@ -176,10 +143,10 @@ section {
   font-weight: 500;
 }
 
-.about-me-description{
+.about-me-description {
   font-size: 1.8rem;
   font-weight: 600;
-  
+
   color: var(--color-primary);
   margin-bottom: 1rem;
 }
@@ -188,7 +155,6 @@ section {
   text-decoration: none;
   color: red;
 }
-
 
 .btn {
   display: inline-block;
@@ -204,8 +170,8 @@ section {
 
 /* PROJECTS */
 .projects-container {
-  display: grid;  
-  grid-template-columns: 1fr 1fr; 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .projects-img {
@@ -218,7 +184,6 @@ section {
   justify-self: center;
   width: 70%;
   font-size: 1.5rem;
-  /* padding-top: 50px; */
 }
 
 .project-title {
@@ -315,11 +280,10 @@ textarea {
 
 /* MEDIA QUERIES */
 
-
-@media screen and (max-width : 360px) {
+@media screen and (max-width: 360px) {
   .navbar {
     bottom: 0;
-  } 
+  }
 
   .footer {
     display: none;
@@ -327,19 +291,17 @@ textarea {
 
   /* Första sektionen "HEADER" */
 
-
   .intro-div {
     text-align: center;
     color: black;
     height: 100vh;
     padding-top: 3rem;
-    
   }
-  
+
   #dot {
-    color: #1284c2; 
+    color: #1284c2;
   }
-  
+
   #title-frontend {
     color: #1284c2;
     font-size: 20px;
@@ -363,7 +325,7 @@ textarea {
     text-transform: none;
   }
 
-  .projects-container{
+  .projects-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -375,7 +337,7 @@ textarea {
   }
 
   .projects-container img {
-    width: 250px; 
+    width: 250px;
   }
 
   /* MODAL WINDOW */
@@ -391,12 +353,12 @@ textarea {
     gap: 0;
   }
 
-  .modal-form p {    
+  .modal-form p {
     text-align: center;
   }
 
   .modal-form input {
-    text-align: center;    
+    text-align: center;
     height: 50px;
     width: 280px;
   }
@@ -405,14 +367,12 @@ textarea {
     height: 50px;
     width: 280px;
   }
-
 }
 
-
-@media screen and (max-width : 768px) {
+@media screen and (max-width: 768px) {
   .navbar {
     bottom: 0;
-  } 
+  }
 
   .footer {
     display: none;
@@ -420,19 +380,17 @@ textarea {
 
   /* Första sektionen "HEADER" */
 
-
   .intro-div {
     text-align: center;
     color: black;
     height: 100vh;
     padding-top: 3rem;
-    
   }
-  
+
   #dot {
-    color: #1284c2; 
+    color: #1284c2;
   }
-  
+
   #title-frontend {
     color: #1284c2;
     font-size: 20px;
@@ -456,7 +414,7 @@ textarea {
     text-transform: none;
   }
 
-  .projects-container{
+  .projects-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -468,7 +426,7 @@ textarea {
   }
 
   .projects-container img {
-    width: 250px; 
+    width: 250px;
   }
 
   /* MODAL WINDOW */
@@ -484,12 +442,12 @@ textarea {
     gap: 0;
   }
 
-  .modal-form p {    
+  .modal-form p {
     text-align: center;
   }
 
   .modal-form input {
-    text-align: center;    
+    text-align: center;
     height: 50px;
     width: 280px;
   }
@@ -498,5 +456,4 @@ textarea {
     height: 50px;
     width: 280px;
   }
-
 }
